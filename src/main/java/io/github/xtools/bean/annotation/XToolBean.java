@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * 开启预编译功能，该注解上的类必须是接口
  * 两个bean必须要有getter setter和无参构造器
  * 如果有异常请查看target#generated-sources生成文件 或 maven-package查看编译报错信息
- * 文档：https://blog.csdn.net/weixin_47649446/article/details/131094679
+ * 文档：<a href="https://blog.csdn.net/weixin_47649446/article/details/131094679">...</a>
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

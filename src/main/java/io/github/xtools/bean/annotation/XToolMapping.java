@@ -116,7 +116,7 @@ public @interface XToolMapping {
      * user方法(目标字段名) 执行映射时， 可以将返回值转换为 User 类型。
      *     XToolMapping(source = "name", target = "name", index = MappingIndexEnums.First, resultType = Name.class)//source不为空则为默认字段 找不到则不处理
      *     void copy(Source source, Target target);
-     *
+     * <p>
      * //public外部类  非public内部类需要加上resultTypeIsInner = false
      * public class Name {
      *     public User user(String user) {  //User:返回字段类型  user:返回字段名称(String:来源字段类型 user:随意变量值(取决于source))
@@ -138,7 +138,7 @@ public @interface XToolMapping {
      * 尚未实现(应该单独抽成注解)： 执行 preProcess 方法。
      *     XToolMapping(source = "name", target = "name", beforeOrAfterHandle = UserImpl.class)
      *     void copy(Source first, Target second);
-     *
+     * <p>
      *      public class impl I {
      *       public String preProcess() {}
      *       public String afterProcess() {}
